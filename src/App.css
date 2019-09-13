@@ -8,6 +8,7 @@
   height: 40vmin;
   pointer-events: none;
   color:white;
+  background: red;
 }
 
 .App-header {
