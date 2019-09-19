@@ -32,7 +32,8 @@ class Header extends Component {
 
     componentDidMount(query) {
 
-        let api = 'https://api.themoviedb.org/3/search/movie?api_key=d22ce4ba604071acbb720573852eb4724&query='
+        // let api = 'https://api.themoviedb.org/3/search/movie?api_key=d22ce4ba604071acbb720573852eb4724&query='
+        let api = 'https://api.themoviedb.org/3/search/movie?api_key=bfe6d404f9e26ffd486ff1092a2def94&query='
 
         Axios.get (api + query)
 
@@ -74,7 +75,7 @@ class Header extends Component {
 
                             <form onSubmit = {this.onSubmit} id = "searchForm">
     
-                                <input className = "col-md-12 form-control" type = "text" id = "searchText" placeholder = "Search Movies..." ref = {input => this.input = input}/>
+                                <input className = "col-md-4 form-control" type = "text" id = "searchText" placeholder = "Search Movies..." ref = {input => this.input = input}/>
     
                             </form>
 
